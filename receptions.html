@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptions</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(221, 221, 221), rgb(84, 235, 255));
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Amiri', serif;
+
+        }
+        .box {
+            width: 300px;
+            padding: 40px;
+            background: rgb(209, 209, 209);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            box-shadow: 1px 1px 10px rgb(0, 0, 0);
+            border: 1px solid #62edfa;
+            border-radius: 22px;
+        }
+
+        .box h1 {
+            color: #62edfa;
+            font-weight: 900;
+            text-shadow: 2px 3px #46685a;
+        }
+
+        .box input[type="text"],
+        .box input[type="password"] {
+            border: 0;
+            width: 240px;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid black;
+            padding: 14px 10px;
+            outline: none;
+            color: black;
+            border-radius: 24px;
+            transition: 0.25s;
+            font-family: 'Amiri', serif;
+        }
+
+        .box input[type="text"]:focus,
+        .box input[type="password"]:focus {
+            width: 280px;
+            border-color: #62edfa;
+        }
+
+        .box input[type="submit"] {
+            border: 0;
+            width: 280px;
+            background: #62edfa;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #62edfa;
+            padding: 14px 40px;
+            outline: none;
+            color: black;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+            font-family: 'Amiri', serif;
+
+        }
+
+        .box input[type="submit"]:hover {
+            background: none;
+            color: rgb(54, 111, 95);
+
+        }
+    </style>
+</head>
+<body>
+    <form class="box" action="login.php" method="post">
+    <center>
+       <h2> صفحة الحجز</h2>
+       <frame>
+        <input type="text" name="FirstName" placeholder="ادخل اسم الاول" dir="rtl" required>
+        <input type="text" name="Lastname" placeholder="ادخل اسم العائله" dir="rtl" required>
+        <input type="text" name="age" placeholder="العمر" dir="rtl" required>
+        <input type="text" name="numCard" placeholder="رقم البطاقه" dir="rtl" required>
+        <input type="text" name="phone" placeholder="رقم الهاتف" dir="rtl" required>
+        <input type="password" name="password" placeholder="الرمز" dir="rtl" required>
+        <input type="submit" value="حجز الان">
+
+
+       </frame>
+
+    </center>
+</form>
+</body>
+</html>
